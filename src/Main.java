@@ -13,6 +13,7 @@ public class Main {
          */
         chessTableDesigner1();
         chessTableDesigner2();
+        chessTableDesigner3();
     }
 
     public static void chessTableDesigner1() {
@@ -71,4 +72,19 @@ public class Main {
         System.out.println("-------------------------------");
     }
 
+    public static void chessTableDesigner3() {
+        System.out.println("Sakktábla rajzoló - 3. változat");
+        final String oddRow = " W B W B W B W B ";
+        final String evenRow = " B W B W B W B W ";
+        System.out.println(headerFooter);
+        for (int i = 1; i <= 8; i++) {
+            if (i % 2 != 0) {
+                System.out.println(i + oddRow + i);
+            } else {
+                System.out.println(i + evenRow + i);
+            }
+        }
+        System.out.println(headerFooter);
+        System.out.println("-------------------------------");
+    }
 }
