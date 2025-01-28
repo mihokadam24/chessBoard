@@ -11,6 +11,10 @@ public class Main {
             W B W B W B W B
             B W B W B W B W
          */
+        chessTableDesigner1();
+    }
+
+    public static void chessTableDesigner1() {
         for (int j = 1; j <= 4; j++) {
             for (int i = 1; i <= 8; i++) {
                 if (i % 2 != 0) {
