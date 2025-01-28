@@ -14,6 +14,7 @@ public class Main {
         chessTableDesigner1();
         chessTableDesigner2();
         chessTableDesigner3();
+        chessTableDesigner4();
     }
 
     public static void chessTableDesigner1() {
@@ -83,6 +84,24 @@ public class Main {
             } else {
                 System.out.println(i + evenRow + i);
             }
+        }
+        System.out.println(headerFooter);
+        System.out.println("-------------------------------");
+    }
+
+    public static void chessTableDesigner4() {
+        System.out.println("Sakktábla rajzoló - 4. változat");
+        System.out.println(headerFooter);
+        for (int row = 1; row <= 8; row++) {
+            System.out.print(row + " ");
+            for (int column = 1; column <= 8; column++) {
+                if ((row % 2 != 0 && column % 2 != 0) || (row % 2 == 0 && column % 2 == 0)) {
+                    System.out.print("W ");
+                } else {
+                    System.out.print("B ");
+                }
+            }
+            System.out.println(row);
         }
         System.out.println(headerFooter);
         System.out.println("-------------------------------");
